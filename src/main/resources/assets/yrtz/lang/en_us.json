@@ -1,0 +1,66 @@
+{
+  "item.yrtz.billie_jean_disc": "Music Disc",
+  "item.yrtz.billie_jean_disc.desc": "Kevin MacLeod - Arpent",
+
+  "entity.yrtz.farmer_steve": "Farmer Steve",
+  "entity.yrtz.dead_farmer_steve": "Undead Farmer Steve",
+
+  "entity.yrtz.miner_steve": "Miner Steve",
+  "entity.yrtz.dead_miner_steve": "Undead Miner Steve",
+
+  "entity.yrtz.iron_steve": "Iron Armor Steve",
+  "entity.yrtz.dead_iron_steve": "Undead Iron Armor Steve",
+
+  "entity.yrtz.diamond_steve": "Diamond Armor Steve",
+  "entity.yrtz.dead_diamond_steve": "Undead Diamond Armor Steve",
+
+  "entity.yrtz.renzhe_steve": "Renzhe Steve",
+  "entity.yrtz.dead_renzhe_steve": "Undead Renzhe Steve",
+
+  "entity.yrtz.arrow_steve": "Archer Steve",
+  "entity.yrtz.dead_arrow_steve": "Undead Archer Steve",
+
+  "entity.yrtz.summoner_steve": "Summoner Steve",
+  "entity.yrtz.summoned_steve": "Summoned Steve",
+  "entity.yrtz.dead_summoner_steve": "Undead Summoner Steve",
+  "entity.yrtz.dead_summoned_steve": "Undead Summoned Steve",
+
+  "entity.yrtz.fire_steve": "Fireball Steve",
+
+  "entity.yrtz.ender_summoner_steve": "End Summoner Steve",
+
+  "entity.yrtz.doctor_steve": "Doctor Steve",
+
+  "entity.yrtz.xmas_steve": "Christmas Steve",
+
+  "item.yrtz.farmer_steve_spawn_egg": "Farmer Steve Spawn Egg",
+  "item.yrtz.dead_farmer_steve_spawn_egg": "Undead Farmer Steve Spawn Egg",
+
+  "item.yrtz.miner_steve_spawn_egg": "Miner Steve Spawn Egg",
+  "item.yrtz.dead_miner_steve_spawn_egg": "Undead Miner Steve Spawn Egg",
+
+  "item.yrtz.iron_steve_spawn_egg": "Iron Armor Steve Spawn Egg",
+  "item.yrtz.dead_iron_steve_spawn_egg": "Undead Iron Armor Steve Spawn Egg",
+
+  "item.yrtz.diamond_steve_spawn_egg": "Diamond Steve Armor Spawn Egg",
+  "item.yrtz.dead_diamond_steve_spawn_egg": "Undead Diamond Armor Steve Spawn Egg",
+
+  "item.yrtz.renzhe_steve_spawn_egg": "Renzhe Steve Spawn Egg",
+  "item.yrtz.dead_renzhe_steve_spawn_egg": "Undead Renzhe Steve Spawn Egg",
+
+  "item.yrtz.arrow_steve_spawn_egg": "Archer Steve Spawn Egg",
+  "item.yrtz.dead_arrow_steve_spawn_egg": "Undead Archer Steve Spawn Egg",
+
+  "item.yrtz.summoner_steve_spawn_egg": "Summoner Steve Spawn Egg",
+  "item.yrtz.summoned_steve_spawn_egg": "Summoned Steve Spawn Egg",
+  "item.yrtz.dead_summoner_steve_spawn_egg": "Undead Summoner Steve Spawn Egg",
+  "item.yrtz.dead_summoned_steve_spawn_egg": "Undead Summoned Steve Spawn Egg",
+
+  "item.yrtz.fire_steve_spawn_egg": "Fireball Steve Spawn Egg",
+
+  "item.yrtz.ender_summoner_steve_spawn_egg": "End Summoner Steve Spawn Egg",
+
+  "item.yrtz.doctor_steve_spawn_egg": "Doctor Steve Spawn Egg",
+
+  "item.yrtz.xmas_steve_spawn_egg": "Christmas Steve Spawn Egg"
+}

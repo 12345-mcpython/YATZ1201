@@ -1,0 +1,26 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 48176523,
+    "separation": 4,
+    "spacing": 15
+  },
+  "structures": [
+    {
+      "structure": "yrtz:firesteve",
+      "weight": 3
+    },
+    {
+      "structure": "yrtz:goldfiresteve",
+      "weight": 7
+    },
+    {
+      "structure": "yrtz:ironfiresteve",
+      "weight": 7
+    },
+    {
+      "structure": "yrtz:emeraldfiresteve",
+      "weight": 7
+    }
+  ]
+}

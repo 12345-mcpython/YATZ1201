@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "minecraft:the_end"
+  ],
+  "spawners": {
+    "type": "yrtz:ender_summoner_steve",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

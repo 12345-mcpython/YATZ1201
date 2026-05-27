@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 58162473,
+    "separation": 8,
+    "spacing": 34
+  },
+  "structures": [
+    {
+      "structure": "yrtz:monster_hub",
+      "weight": 1
+    },
+    {
+      "structure": "yrtz:monster_hub_deep",
+      "weight": 1
+    }
+  ]
+}

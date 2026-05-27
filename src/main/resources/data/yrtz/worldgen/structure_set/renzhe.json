@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 81274536,
+    "separation": 8,
+    "spacing": 15
+  },
+  "structures": [
+    {
+      "structure": "yrtz:renzhe",
+      "weight": 1
+    }
+  ]
+}

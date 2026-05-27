@@ -1,0 +1,8 @@
+{
+  "iam_bad": {
+    "sounds": [
+      "yrtz:iam_bad"
+    ],
+    "stream": true
+  }
+}
