@@ -4,7 +4,9 @@ package com.zixiao.yrtz.mixin.zombieDontHurtPlayer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.monster.AbstractSkeleton;
 import net.minecraft.world.entity.monster.Drowned;
+import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -26,9 +28,15 @@ public abstract class NearestAttackableTargetGoalMixin<T extends LivingEntity> {
 
         var mob = ((TargetGoalAccessor)this).getMob();
 
-        if (mob instanceof Drowned
-                && (this.targetType == Player.class
-                || this.targetType == ServerPlayer.class)) {
+//        if (mob instanceof Drowned
+//                && (this.targetType == Player.class
+//                || this.targetType == ServerPlayer.class)) {
+//
+//            this.target = null;
+//            ci.cancel();
+//        }
+        if ((mob instanceof Drowned || mob instanceof AbstractSkeleton || mob instanceof Zombie)
+                && (this.targetType == Player.class || this.targetType == ServerPlayer.class)) {
 
             this.target = null;
             ci.cancel();

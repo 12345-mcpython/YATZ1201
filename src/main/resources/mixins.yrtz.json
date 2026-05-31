@@ -17,12 +17,9 @@
     "playerArmorValue.PlayerMixin",
     "playerBurn.PlayerSunBurnMixin",
     "playerRenderZombie.PlayerModelMixin",
-    "playerRenderZombie.PlayerRendererMixin",
     "playerRenderZombie.PlayerRendererMixin2",
-    "playerRenderZombie.PlayerRendererMixin3",
     "playerTransVillager.PlayerKillMixin",
     "playerTypeUndead.LivingEntityMixin",
-    "skeletonDontHurtPlayer.AbstractSkeletonMixin",
     "sleepToNight.PlayerMixin2",
     "sleepToNight.ServerLevelMixin",
     "sleepToNight.ServerLevelMixin2",
@@ -32,12 +29,13 @@
     "zombieAndSkeletonNoXp.ZombieMixin",
     "zombieAndSkeletonPickup.AbstractSkeletonMixin",
     "zombieAndSkeletonPickup.ZombiePickMixin",
-    "zombieDontHurtPlayer.ZombieMixin",
     "zombieDontHurtPlayer.NearestAttackableTargetGoalMixin",
     "zombieDontHurtPlayer.TargetGoalAccessor",
+    "zombieDontHurtPlayer.ZombieMixin",
     "zombieFollowRottenMeat.ZombieFollowMixin"
   ],
   "client": [
+    "playerRenderZombie.AbstractClientPlayerMixin"
   ],
   "server": [
   ],
