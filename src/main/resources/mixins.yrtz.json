@@ -5,7 +5,7 @@
   "refmap": "mixins.yrtz.refmap.json",
   "mixins": [
     "arrowSteveSpawn.VillageRoadSpawnMixin",
-    "diamondSreveSpawn.VillageRoadSpawnMixin",
+    "diamondSteveSpawn.VillageRoadSpawnMixin",
     "doctorSteveSpawn.SinglePoolElementMixin",
     "farmerSteveSpawn.VillageFarmSpawnMixin",
     "farmerSteveSpawn.VillageRoadSpawnMixin",

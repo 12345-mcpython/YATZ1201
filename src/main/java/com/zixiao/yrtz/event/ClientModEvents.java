@@ -1,6 +1,6 @@
 package com.zixiao.yrtz.event;
 
-import com.zixiao.yrtz.reegister.ModEntities;
+import com.zixiao.yrtz.register.ModEntities;
 import com.zixiao.yrtz.steve.spSteve.xmasSteve.xmasSteveRenderer;
 import com.zixiao.yrtz.steve.spSteve.doctorSteve.doctorSteveRenderer;
 import com.zixiao.yrtz.steve.spSteve.endersummonerSteve.endersummonerSteveRenderer;

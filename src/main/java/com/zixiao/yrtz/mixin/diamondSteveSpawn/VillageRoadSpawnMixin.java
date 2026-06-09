@@ -1,7 +1,7 @@
-package com.zixiao.yrtz.mixin.diamondSreveSpawn;
+package com.zixiao.yrtz.mixin.diamondSteveSpawn;
 
 import com.mojang.datafixers.util.Either;
-import com.zixiao.yrtz.reegister.ModEntities;
+import com.zixiao.yrtz.register.ModEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.structure.BoundingBox;
+import net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplateManager;
 import org.spongepowered.asm.mixin.Final;
@@ -25,7 +26,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.HashSet;
 import java.util.Set;
 
-@Mixin(net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement.class)
+@Mixin(SinglePoolElement.class)
 public class VillageRoadSpawnMixin {
     private static final Set<String> SPAWNED_POSITIONS = new HashSet<>();
 

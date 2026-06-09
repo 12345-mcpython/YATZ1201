@@ -1,6 +1,6 @@
 package com.zixiao.yrtz.mixin.mobdonotAttackSteve;
 
-import com.zixiao.yrtz.reegister.ModEntities;
+import com.zixiao.yrtz.register.ModEntities;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.animal.IronGolem;
 import org.spongepowered.asm.mixin.Mixin;

@@ -1,7 +1,7 @@
 package com.zixiao.yrtz.mixin.doctorSteveSpawn;
 
 import com.mojang.datafixers.util.Either;
-import com.zixiao.yrtz.reegister.ModEntities;
+import com.zixiao.yrtz.register.ModEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
@@ -18,6 +18,7 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemp
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -28,6 +29,7 @@ import java.util.Set;
 @Mixin(SinglePoolElement.class)
 public class SinglePoolElementMixin {
 
+    @Unique
     private static final Set<BlockPos> SPAWNED_STRUCTURES = new HashSet<>();
 
     @Shadow

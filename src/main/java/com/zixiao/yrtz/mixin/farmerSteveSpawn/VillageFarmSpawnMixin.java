@@ -2,7 +2,7 @@ package com.zixiao.yrtz.mixin.farmerSteveSpawn;
 
 import net.minecraft.world.level.block.Rotation;
 import com.mojang.datafixers.util.Either;
-import com.zixiao.yrtz.reegister.ModEntities;
+import com.zixiao.yrtz.register.ModEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;

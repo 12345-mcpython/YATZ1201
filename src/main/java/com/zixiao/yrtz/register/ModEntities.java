@@ -1,4 +1,4 @@
-package com.zixiao.yrtz.reegister;
+package com.zixiao.yrtz.register;
 
 import com.zixiao.yrtz.steve.deadSteve.deadsummonerSteve.deadsummonedSteve.deadsummonedSteveEntity;
 import com.zixiao.yrtz.steve.deadSteve.deadsummonerSteve.deadsummonerSteveEntity;

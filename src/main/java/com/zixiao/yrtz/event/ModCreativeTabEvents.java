@@ -1,6 +1,6 @@
 package com.zixiao.yrtz.event;
 
-import com.zixiao.yrtz.reegister.ModItems;
+import com.zixiao.yrtz.register.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;

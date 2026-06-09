@@ -1,4 +1,4 @@
-package com.zixiao.yrtz.reegister;
+package com.zixiao.yrtz.register;
 
 import com.zixiao.yrtz.yrtz;
 import net.minecraft.resources.ResourceLocation;

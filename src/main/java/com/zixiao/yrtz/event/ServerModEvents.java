@@ -1,4 +1,4 @@
-package com.zixiao.yrtz.noHungryDebuff;
+package com.zixiao.yrtz.event;
 
 import com.zixiao.yrtz.yrtz;
 import net.minecraft.world.effect.MobEffects;
@@ -9,7 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = yrtz.MODID)
-public class EffectHandler {
+public class ServerModEvents {
 
     @SubscribeEvent
     public static void onEffectApplicable(MobEffectEvent.Applicable event) {

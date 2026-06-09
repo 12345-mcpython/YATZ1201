@@ -1,6 +1,6 @@
 package com.zixiao.yrtz.steve.spSteve.endersummonerSteve;
 
-import com.zixiao.yrtz.reegister.ModEntities;
+import com.zixiao.yrtz.register.ModEntities;
 import com.zixiao.yrtz.steve.baseEntity.SteveEntity;
 import com.zixiao.yrtz.steve.ai.enderSteveAttackGoal;
 import net.minecraft.world.entity.*;

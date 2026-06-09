@@ -1,6 +1,6 @@
 package com.zixiao.yrtz.steve.normalSteve.summonerSteve;
 
-import com.zixiao.yrtz.reegister.ModEntities;
+import com.zixiao.yrtz.register.ModEntities;
 import com.zixiao.yrtz.steve.baseEntity.modMonster;
 import com.zixiao.yrtz.steve.ai.SteveAttackGoal;
 import com.zixiao.yrtz.steve.normalSteve.summonerSteve.summonedSteve.summonedSteveEntity;
