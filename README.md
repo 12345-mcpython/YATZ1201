@@ -1,4 +1,4 @@
-# You are a zombie
+# You are The Zombie
 
 ## 游戏机制变化
 
