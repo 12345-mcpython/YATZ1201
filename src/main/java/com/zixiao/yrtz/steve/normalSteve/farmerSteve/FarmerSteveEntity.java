@@ -1,8 +1,8 @@
 package com.zixiao.yrtz.steve.normalSteve.farmerSteve;
 
-import com.zixiao.yrtz.steve.baseEntity.modMonster;
+import com.zixiao.yrtz.steve.baseEntity.ModMonster;
 import com.zixiao.yrtz.steve.ai.SteveAttackGoal;
-import com.zixiao.yrtz.steve.baseEntity.normalSteveEntity;
+import com.zixiao.yrtz.steve.baseEntity.NormalSteveEntity;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.*;
@@ -21,9 +21,9 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import org.jetbrains.annotations.Nullable;
 
-public class FarmerSteveEntity extends normalSteveEntity {
+public class FarmerSteveEntity extends NormalSteveEntity {
 
-    public FarmerSteveEntity(EntityType<? extends modMonster> type, Level level) {
+    public FarmerSteveEntity(EntityType<? extends ModMonster> type, Level level) {
         super(type, level);
 
         if (this.getNavigation() instanceof GroundPathNavigation navigation) {

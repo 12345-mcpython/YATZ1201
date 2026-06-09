@@ -1,8 +1,8 @@
 package com.zixiao.yrtz.mixin.zombieDontHurtPlayer;
 
 import com.zixiao.yrtz.steve.baseEntity.SteveEntity;
-import com.zixiao.yrtz.steve.spSteve.endersummonerSteve.endersummonerSteveEntity;
-import com.zixiao.yrtz.steve.spSteve.xmasSteve.xmasSteveEntity;
+import com.zixiao.yrtz.steve.spSteve.endersummonerSteve.EnderSummonerSteveEntity;
+import com.zixiao.yrtz.steve.spSteve.xmasSteve.XmasSteveEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
@@ -31,8 +31,8 @@ public abstract class ZombieMixin extends Mob {
         zombie.targetSelector.addGoal(1, new HurtByTargetGoal(zombie));
 
         zombie.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(zombie, SteveEntity.class, true));
-        zombie.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(zombie, endersummonerSteveEntity.class, true));
-        zombie.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(zombie, xmasSteveEntity.class, true));
+        zombie.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(zombie, EnderSummonerSteveEntity.class, true));
+        zombie.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(zombie, XmasSteveEntity.class, true));
         zombie.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(zombie, AbstractVillager.class, false));
         zombie.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(zombie, IronGolem.class, true));
         zombie.targetSelector.addGoal(5, new NearestAttackableTargetGoal<>(zombie, Turtle.class, 10, true, false, Turtle.BABY_ON_LAND_SELECTOR));

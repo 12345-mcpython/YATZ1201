@@ -5,9 +5,9 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 
-public class SteveEntity extends modMonster {
+public class SteveEntity extends ModMonster {
 
-    public SteveEntity(EntityType<? extends modMonster> type, Level level) {
+    public SteveEntity(EntityType<? extends ModMonster> type, Level level) {
         super(type, level);
     }
 

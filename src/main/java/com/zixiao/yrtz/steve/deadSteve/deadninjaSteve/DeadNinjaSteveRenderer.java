@@ -1,4 +1,4 @@
-package com.zixiao.yrtz.steve.normalSteve.renzheSteve;
+package com.zixiao.yrtz.steve.deadSteve.deadninjaSteve;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.model.HumanoidModel;
@@ -10,11 +10,11 @@ import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
 import net.minecraft.client.renderer.entity.layers.ItemInHandLayer;
 import net.minecraft.resources.ResourceLocation;
 
-public class renzheSteveRenderer extends MobRenderer<
-        renzheSteveEntity,
-        HumanoidModel<renzheSteveEntity>> {
+public class DeadNinjaSteveRenderer extends MobRenderer<
+        DeadNinjaSteveEntity,
+        HumanoidModel<DeadNinjaSteveEntity>> {
 
-    public renzheSteveRenderer(EntityRendererProvider.Context context) {
+    public DeadNinjaSteveRenderer(EntityRendererProvider.Context context) {
         super(
                 context,
                 new HumanoidModel<>(context.bakeLayer(ModelLayers.ZOMBIE)), // ✔ 稳定不会缺 part
@@ -30,15 +30,15 @@ public class renzheSteveRenderer extends MobRenderer<
     }
 
     @Override
-    public ResourceLocation getTextureLocation(renzheSteveEntity entity) {
+    public ResourceLocation getTextureLocation(DeadNinjaSteveEntity entity) {
         return ResourceLocation.fromNamespaceAndPath(
                 "yrtz",
-                "textures/entity/steve/renzhesteve.png"
+                "textures/entity/steve/deadrenzhesteve.png"
         );
     }
 
     @Override
-    public void render(renzheSteveEntity entity,
+    public void render(DeadNinjaSteveEntity entity,
                        float entityYaw,
                        float partialTicks,
                        PoseStack poseStack,

@@ -1,9 +1,9 @@
-package com.zixiao.yrtz.steve.normalSteve.renzheSteve;
+package com.zixiao.yrtz.steve.normalSteve.ninjaSteve;
 
-import com.zixiao.yrtz.steve.baseEntity.modMonster;
-import com.zixiao.yrtz.steve.ai.RenzheRandomStrollGoal;
+import com.zixiao.yrtz.steve.baseEntity.ModMonster;
+import com.zixiao.yrtz.steve.ai.NinjaRandomStrollGoal;
 import com.zixiao.yrtz.steve.ai.SteveAttackGoal;
-import com.zixiao.yrtz.steve.baseEntity.normalSteveEntity;
+import com.zixiao.yrtz.steve.baseEntity.NormalSteveEntity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -17,9 +17,9 @@ import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 
-public class renzheSteveEntity extends normalSteveEntity {
+public class NinjaSteveEntity extends NormalSteveEntity {
 
-    public renzheSteveEntity(EntityType<? extends modMonster> type, Level level) {
+    public NinjaSteveEntity(EntityType<? extends ModMonster> type, Level level) {
         super(type, level);
 
         if (this.getNavigation() instanceof GroundPathNavigation navigation) {
@@ -41,7 +41,7 @@ public class renzheSteveEntity extends normalSteveEntity {
         this.goalSelector.addGoal(6,
                 new RandomLookAroundGoal(this));
         this.goalSelector.addGoal(7,
-                new RenzheRandomStrollGoal(this, 1.0D));
+                new NinjaRandomStrollGoal(this, 1.0D));
         this.targetSelector.addGoal(1,
                 new HurtByTargetGoal(this));
 

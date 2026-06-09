@@ -1,22 +1,22 @@
 package com.zixiao.yrtz.steve.ai;
 
-import com.zixiao.yrtz.steve.normalSteve.renzheSteve.renzheSteveEntity;
+import com.zixiao.yrtz.steve.normalSteve.ninjaSteve.NinjaSteveEntity;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.phys.Vec3;
 
-public class fireRandomStrollGoal extends WaterAvoidingRandomStrollGoal {
+public class NinjaRandomStrollGoal extends WaterAvoidingRandomStrollGoal {
 
     private int cooldown = 0;
     private boolean firstUse = true;
 
-    public fireRandomStrollGoal(PathfinderMob mob, double speed) {
+    public NinjaRandomStrollGoal(PathfinderMob mob, double speed) {
         super(mob, speed);
     }
 
     @Override
     public boolean canUse() {
-        if (!(this.mob instanceof renzheSteveEntity)) {
+        if (!(this.mob instanceof NinjaSteveEntity)) {
             return super.canUse(); // 其他生物保持原逻辑
         }
 

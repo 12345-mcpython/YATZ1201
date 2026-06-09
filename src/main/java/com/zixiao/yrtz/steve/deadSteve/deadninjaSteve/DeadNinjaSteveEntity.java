@@ -1,11 +1,11 @@
-package com.zixiao.yrtz.steve.deadSteve.deadfarmerSteve;
+package com.zixiao.yrtz.steve.deadSteve.deadninjaSteve;
 
-import com.zixiao.yrtz.steve.baseEntity.modMonster;
+import com.zixiao.yrtz.steve.baseEntity.ModMonster;
 import com.zixiao.yrtz.steve.ai.SteveAttackGoal;
 import com.zixiao.yrtz.steve.baseEntity.SteveEntity;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.DifficultyInstance;
-import net.minecraft.world.entity.*;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
@@ -17,15 +17,11 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.ServerLevelAccessor;
-import org.jetbrains.annotations.Nullable;
 
-public class deadFarmerSteveEntity extends SteveEntity {
+public class DeadNinjaSteveEntity extends SteveEntity {
 
-    public deadFarmerSteveEntity(EntityType<? extends modMonster> type, Level level) {
+    public DeadNinjaSteveEntity(EntityType<? extends ModMonster> type, Level level) {
         super(type, level);
     }
 
@@ -33,9 +29,9 @@ public class deadFarmerSteveEntity extends SteveEntity {
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
         this.goalSelector.addGoal(1,
-                new SteveAttackGoal(this, 1.0D, false));
+                new SteveAttackGoal(this, 1.3D, false));
         this.goalSelector.addGoal(3,
-                new WaterAvoidingRandomStrollGoal(this, 1.0D));
+                new WaterAvoidingRandomStrollGoal(this, 1.3D));
         this.goalSelector.addGoal(4,
                 new LookAtPlayerGoal(this, Player.class, 8.0F));
 
@@ -52,31 +48,21 @@ public class deadFarmerSteveEntity extends SteveEntity {
     }
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 20.0D)
-                .add(Attributes.MOVEMENT_SPEED, 0.25D)
-                .add(Attributes.ATTACK_DAMAGE, 3.0D)
+                .add(Attributes.MAX_HEALTH, 28.0D)
+                .add(Attributes.MOVEMENT_SPEED, 0.7D)
+                .add(Attributes.ATTACK_DAMAGE, 5.0D)
                 .add(Attributes.FOLLOW_RANGE, 35.0D);
     }
+
     @Override
-    public SpawnGroupData finalizeSpawn(ServerLevelAccessor level,
-                                        DifficultyInstance difficulty,
-                                        MobSpawnType spawnType,
-                                        @Nullable SpawnGroupData spawnData,
-                                        @Nullable CompoundTag tag) {
+    protected void jumpFromGround() {
+        this.setDeltaMovement(this.getDeltaMovement().x, 0.95D, this.getDeltaMovement().z);
+        this.hasImpulse = true;
+    }
 
-        SpawnGroupData data = super.finalizeSpawn(level, difficulty, spawnType, spawnData, tag);
-
-        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.WOODEN_HOE));
-        this.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Items.LEATHER_LEGGINGS));
-        this.setItemSlot(EquipmentSlot.FEET, new ItemStack(Items.LEATHER_BOOTS));
-
-        this.setDropChance(EquipmentSlot.MAINHAND, 0.0F);
-        this.setDropChance(EquipmentSlot.HEAD, 0.0F);
-        this.setDropChance(EquipmentSlot.CHEST, 0.0F);
-        this.setDropChance(EquipmentSlot.LEGS, 0.0F);
-        this.setDropChance(EquipmentSlot.FEET, 0.0F);
-
-        return data;
+    @Override
+    public boolean causeFallDamage(float fallDistance, float damageMultiplier, DamageSource source) {
+        return false;
     }
 
     @Override
