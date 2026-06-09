@@ -1,6 +1,6 @@
 package com.zixiao.yrtz.register;
 
-import com.zixiao.yrtz.yrtz;
+import com.zixiao.yrtz.YRTZMod;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.RecordItem;
@@ -13,7 +13,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(
                     ForgeRegistries.ITEMS,
-                    yrtz.MODID
+                    YRTZMod.MODID
             );
     public static final RegistryObject<Item> IAM_BAD_DISC =
             ITEMS.register(

@@ -9,13 +9,13 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-@Mod(yrtz.MODID)
-public class yrtz
+@Mod(YRTZMod.MODID)
+public class YRTZMod
 {
     public static final String MODID = "yrtz";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public yrtz(FMLJavaModLoadingContext context)
+    public YRTZMod(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);

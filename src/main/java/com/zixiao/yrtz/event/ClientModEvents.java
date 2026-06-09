@@ -21,13 +21,13 @@ import com.zixiao.yrtz.steve.normalSteve.minerSteve.minerSteveRenderer;
 import com.zixiao.yrtz.steve.deadSteve.deadminerSteve.deadminerSteveRenderer;
 import com.zixiao.yrtz.steve.deadSteve.deadfarmerSteve.deadFarmerSteveRenderer;
 import com.zixiao.yrtz.steve.normalSteve.farmerSteve.FarmerSteveRenderer;
-import com.zixiao.yrtz.yrtz;
+import com.zixiao.yrtz.YRTZMod;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber(modid = yrtz.MODID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = YRTZMod.MODID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ClientModEvents {
 
     @SubscribeEvent

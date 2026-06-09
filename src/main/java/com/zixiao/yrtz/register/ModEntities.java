@@ -20,7 +20,7 @@ import com.zixiao.yrtz.steve.spSteve.doctorSteve.doctorSteveEntity;
 import com.zixiao.yrtz.steve.spSteve.endersummonerSteve.endersummonerSteveEntity;
 import com.zixiao.yrtz.steve.spSteve.fireSteve.fireSteveEntity;
 import com.zixiao.yrtz.steve.spSteve.xmasSteve.xmasSteveEntity;
-import com.zixiao.yrtz.yrtz;
+import com.zixiao.yrtz.YRTZMod;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.registries.DeferredRegister;
@@ -30,7 +30,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModEntities {
 
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
-            DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, yrtz.MODID);
+            DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, YRTZMod.MODID);
 
     public static final RegistryObject<EntityType<FarmerSteveEntity>> FARMER_STEVE =
             ENTITY_TYPES.register("farmer_steve",

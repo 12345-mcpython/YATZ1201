@@ -1,6 +1,6 @@
 package com.zixiao.yrtz.register;
 
-import com.zixiao.yrtz.yrtz;
+import com.zixiao.yrtz.YRTZMod;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -11,13 +11,13 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModSounds {
 
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
-            DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, yrtz.MODID);
+            DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, YRTZMod.MODID);
 
     public static final RegistryObject<SoundEvent> IAM_BAD =
             registerSoundEvents("iam_bad");
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
-        return SOUND_EVENTS.register(name,() -> SoundEvent.createVariableRangeEvent(new ResourceLocation(yrtz.MODID,name)));
+        return SOUND_EVENTS.register(name,() -> SoundEvent.createVariableRangeEvent(new ResourceLocation(YRTZMod.MODID,name)));
     }
 
     public static void register(IEventBus eventBus) {
